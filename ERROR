@@ -1,0 +1,11 @@
+Lors de l'exercice, j'ai créé une image Docker pour déployer une API Flask, conformément aux consignes. 
+J'ai configuré un fichier requirements.txt pour installer Flask et gunicorn, puis un Dockerfile pour construire l'image. 
+Cependant, j'ai rencontré plusieurs problèmes liés à la mauvaise référence du fichier Python (comme ping.py) dans la commande CMD du Dockerfile. 
+L'erreur ModuleNotFoundError: No module named 'ping' est apparue, car le fichier Flask n'était pas trouvé par gunicorn. 
+J'ai dû ajuster le nom du fichier et m'assurer qu'il était correctement placé dans la structure du projet.
+
+Après avoir corrigé les erreurs de référence de fichiers et de structure du projet, l'API semblait prête, 
+mais certains tests sont encore nécessaires pour m'assurer qu'elle fonctionne comme prévu. 
+Le projet n'est pas encore totalement fonctionnel, mais je continue de chercher la meilleure solution pour résoudre les derniers problèmes. 
+À ce stade, je soumets ce travail avec les éléments suivants : Dockerfile, requirements.txt, et le fichier ping.py avec le code Flask. 
+Je vais continuer à tester et à perfectionner l'implémentation si nécessaire.
